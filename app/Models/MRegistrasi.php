@@ -1,11 +1,11 @@
- <?php
+<?php
 
-    namespace App\Models;
+namespace App\Models;
 
-    use CodeIgniter\Model;
+use CodeIgniter\Model;
 
-    class MRegistrasi extends Model
-    {
-        protected $table = 'member';
-        protected $allowedFields = ['nama', 'email', 'password'];
-    }
+class MRegistrasi extends Model
+{
+  protected $table = 'member';
+  protected $allowedFields = ['nama', 'email', 'password'];
+}

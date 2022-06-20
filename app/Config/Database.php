@@ -31,7 +31,7 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN' => '',
+        'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
@@ -39,16 +39,17 @@ class Database extends Config
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
-        'DBDebug' => (ENVIRONMENT !== 'production'),
-        'charset' => 'utf8',
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
-        'swapPre' => '',
-        'encrypt' => false,
+        'swapPre'  => '',
+        'encrypt'  => false,
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port' => 3306,
+        'port'     => 3306,
     ];
+
     /**
      * This database connection is used when
      * running PHPUnit database tests.

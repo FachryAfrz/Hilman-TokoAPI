@@ -1,21 +1,20 @@
- <?php
+<?php
 
-    namespace App\Controllers;
+namespace App\Controllers;
 
-    use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\RESTful\ResourceController;
 
-    class RestfulController extends ResourceController
-    {
+class RestfulController extends ResourceController
+{
 
-        protected $format = 'json';
+  protected $format = 'json';
 
-        protected function responseHasil($code, $status, $data)
-        {
-            return $this->respond([
-
-                'code' => $code,
-                'status' => $status,
-                'data' => $data
-            ]);
-        }
-    }
+  protected function responseHasil($code, $status, $data)
+  {
+    return $this->respond([
+      'code' => $code,
+      'status' => $status,
+      'data' => $data
+    ]);
+  }
+}
